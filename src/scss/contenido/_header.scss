@@ -1,0 +1,85 @@
+@use "../base/variables" as v;
+
+.header {
+  padding-block: 5rem;
+  background-image: linear-gradient(v.$secundario-opacity 0%, v.$secundario-opacity 100%), url("../img/header.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    min-height: 50rem;
+  }
+
+  @media (min-width: 1024px) {
+    min-height: 75rem;
+  }
+
+  @supports (background-image: url("../img/header.webp")) {
+    .header {
+      background-image: linear-gradient(v.$secundario-opacity 0%, v.$secundario-opacity 100%), url("../img/header.webp");
+    }
+  }
+
+  @supports (background-image: url("../img/header.avif")) {
+    .header {
+      background-image: linear-gradient(v.$secundario-opacity 0%, v.$secundario-opacity 100%), url("../img/header.avif");
+    }
+  }
+
+  &__logo {
+    width: 10rem;
+    height: 7rem;
+    margin-inline: auto;
+
+    @media (min-width: 768px) {
+      width: 15rem;
+      height: 9rem;
+      margin-inline: unset;
+    }
+  }
+
+  &__content {
+    margin-top: 5rem;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      max-width: 40rem;
+      margin-top: 10rem;
+      text-align: left;
+    }
+
+    @media (min-width: 1024px) {
+      max-width: 50rem;
+      margin-top: 14rem;
+    }
+  }
+
+  &__titulo {
+    color: v.$blanco;
+
+    @media (min-width: 768px) {
+      font-size: 4.8rem;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 6rem;
+    }
+  }
+
+  &__buttom {
+    width: 100%;
+    margin-top: 1.6rem;
+    padding: .8rem 3.2rem;
+    display: block;
+    font-weight: 900;
+    color: v.$secundario;
+    font-family: v.$fuente_principal;
+    background-color: v.$primario;
+
+    @media (min-width: 768px) {
+      width: auto;
+      display: inline-block;
+    }
+  }
+}
