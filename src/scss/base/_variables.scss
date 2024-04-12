@@ -1,35 +1,50 @@
-// @font-face {
-//   font-family: "Roboto";
-//   font-style: normal;
-//   font-weight: 400;
-//   src: url("../../src/fonts/") format("truetype");
-// }
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../src/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+}
 
-// @font-face {
-//   font-family: "Roboto";
-//   font-style: normal;
-//   font-weight: 600;
-//   src: url("../../src/fonts/") format("truetype");
-// }
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../src/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+}
 
-// @font-face {
-//   font-family: "Roboto";
-//   font-style: normal;
-//   font-weight: 700;
-//   src: url("../../src/fonts/") format("truetype");
-// }
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../../src/fonts/Poppins/Poppins-Black.ttf") format("truetype");
+}
 
-// @font-face {
-//   font-family: "Roboto";
-//   font-style: normal;
-//   font-weight: 900;
-//   src: url("../../src/fonts/") format("truetype");
-// }
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../src/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../src/fonts/Playfair_Display/PlayfairDisplay-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../../src/fonts/Playfair_Display/PlayfairDisplay-Black.ttf") format("truetype");
+}
 
 // Fuentes
-$fuente_principal: '', sans-serif;
-$paragraph: 400 1.4rem/1.5 $fuente_principal;
-$paragraph-tablet: 400 1.6rem/1.5 $fuente_principal;
+$fuente_principal: 'Poppins', sans-serif;
+$fuente_secundaria: 'Playfair Display', sans-serif;
+$paragraph: 400 1.4rem/1.5 $fuente_secundaria;
+$paragraph-tablet: 400 1.6rem/1.5 $fuente_secundaria;
 $title1: 900 4rem/1.2 $fuente_principal;
 $title2: 900 3.2rem/1.2 $fuente_principal;
 $title3: 900 2.4rem/1.2 $fuente_principal;
