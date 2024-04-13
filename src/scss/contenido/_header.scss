@@ -15,18 +15,6 @@
     min-height: 75rem;
   }
 
-  @supports (background-image: url("../img/header.webp")) {
-    .header {
-      background-image: linear-gradient(v.$secundario-opacity 0%, v.$secundario-opacity 100%), url("../img/header.webp");
-    }
-  }
-
-  @supports (background-image: url("../img/header.avif")) {
-    .header {
-      background-image: linear-gradient(v.$secundario-opacity 0%, v.$secundario-opacity 100%), url("../img/header.avif");
-    }
-  }
-
   &__logo {
     width: 10rem;
     height: 7rem;
@@ -81,5 +69,17 @@
       width: auto;
       display: inline-block;
     }
+  }
+}
+
+@supports (background-image: url("../img/header.webp")) {
+  .header {
+    background-image: linear-gradient(v.$secundario-opacity 0%, v.$secundario-opacity 100%), url("../img/header.webp");
+  }
+}
+
+@supports (background-image: url("../img/header.avif")) {
+  .header {
+    background-image: linear-gradient(v.$secundario-opacity 0%, v.$secundario-opacity 100%), url("../img/header.avif");
   }
 }
