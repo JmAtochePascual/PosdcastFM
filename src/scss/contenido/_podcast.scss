@@ -1,0 +1,29 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.podcast {
+  padding-block: 3rem;
+
+  @media screen and (min-width: 768px) {
+    padding-block: 8rem;
+  }
+
+  &__grid {
+    display: grid;
+    gap: 1.6rem;
+
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__titulo {
+    @include m.surbrayado(v.$secundario, v.$primario);
+  }
+}

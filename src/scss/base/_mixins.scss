@@ -1,0 +1,18 @@
+@mixin surbrayado($colorTitulo, $colorSubrayado) {
+  position: relative;
+  z-index: 10;
+  width: fit-content;
+  margin-bottom: 1.6rem;
+  color: $colorTitulo;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: .4rem;
+    width: 102%;
+    height: .8rem;
+    display: block;
+    background-color: $colorSubrayado;
+  }
+}
