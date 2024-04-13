@@ -1,0 +1,53 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.beneficios {
+  overflow-x: hidden;
+  padding-block: 3rem;
+  background-color: v.$primario;
+
+  @media (min-width: 768px) {
+    padding-block: 8rem;
+  }
+
+  &__grid {
+    display: grid;
+    gap: 1.6rem;
+    justify-items: center;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(5, 1fr);
+      align-items: center;
+    }
+  }
+
+  &__content {
+    @media (min-width: 768px) {
+      grid-column: 1 / 4;
+    }
+  }
+
+  &__titulo {
+    @include m.surbrayado(v.$secundario, v.$blanco);
+  }
+
+  &__picture {
+
+    @media (min-width: 768px) {
+      grid-column: 4 / 6;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 40rem;
+    height: auto;
+
+    @media (min-width: 768px) {
+      &:hover {
+        transform: scale(1.1) rotate(9deg);
+        transition: transform .3s;
+      }
+    }
+  }
+}
