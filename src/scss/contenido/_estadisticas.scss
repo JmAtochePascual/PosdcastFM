@@ -1,0 +1,20 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.estadisticas {
+  padding-block: 3rem;
+
+  @media (min-width: 768px) {
+    padding-block: 8rem;
+  }
+
+  &__titulo {
+    @include m.surbrayado(v.$secundario, v.$primario);
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    margin-top: 2.4rem;
+  }
+}
