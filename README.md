@@ -1,54 +1,85 @@
 # ⚡️ PodcastFM
 
-Este proyecto es una plataforma web diseñada para facilitar la creación y distribución de podcasts. Permite a los usuarios publicar sus podcasts y distribuirlos a las plataformas más populares como Google Podcast, Spotify, Apple Podcast y YouTube, ofreciendo una experiencia integral y accesible para alcanzar una amplia audiencia.
-
-## 🎯 Contenido
-
-1. 📝[Descripción](#descripción)
-2. 🛠️[Tecnologías y Herramientas](#tecnologías-y-herramientas)
-3. 🚀[Estructura del Proyecto](#estructura-del-proyecto)
-4. 🧑‍💻[Uso](#uso)
-5. 📌[Instalación](#instalación)
-6. 🏗️[Contribución](#contribución)
-7. ✨[Licencia](#licencia)
-8. 🙈[Imagen de Referencia](#imagen-de-rereferencia)
-9. 🌐[Ver Proyecto en la WEB](#ver-proyecto-en-la-web)
-
-## Descripción
-
-PodcastFM es una plataforma completa que permite a los usuarios crear, gestionar y distribuir podcasts. Incluye funcionalidades para la edición de audio, gestión de episodios, y análisis de audiencia, ofreciendo una solución todo-en-uno para podcasters de cualquier nivel.
+Este proyecto es un sitio web para una cafetería moderna que ofrece una experiencia única a sus clientes. La página web presenta información sobre nuestros productos, historia, proceso de preparación del café, menú completo y permite a los visitantes contactarnos fácilmente. El diseño está optimizado para todos los dispositivos y utiliza las últimas tecnologías web para garantizar el mejor rendimiento y experiencia de usuario.
 
 ## Tecnologías y Herramientas
 
-- **HTML5**: Para la estructura de la página.
-- **CSS3**: Para los estilos y el diseño visual.
-- **SCSS**: Preprocesador usado para generación de código css.
-- **SVG Avif Webp**: Formatos de imagen para gráficos e iconos de alta calidad.
-- **Responsive Design**: Asegura que la web sea accesible en cualquier dispositivo.
+- **HTML5**: Lenguaje de marcado para la estructura de la página.
+- **CSS3**: Estilos para el diseño y presentación.
+- **SCSS/SASS**: Preprocesador CSS para una escritura más eficiente de estilos.
+- **Gulp**: Automatización de tareas como compilación de SCSS, optimización de imágenes y más.
+- **PostCSS**: Procesamiento de CSS con plugins como Autoprefixer y CSSnano.
+- **Google Fonts**: Tipografías web optimizadas.
+- **Responsive Design**: Diseño adaptable para todos los dispositivos.
+- **Formatos de imagen modernos**: Soporte para WebP y AVIF para optimizar el rendimiento.
+- **Meta tags SEO**: Optimización para motores de búsqueda.
+- **Open Graph**: Meta tags para compartir en redes sociales.
+- **Favicon**: Iconos personalizados para diferentes dispositivos y plataformas.
 
 ## Estructura del Proyecto
 
-- **build/css/**: Carpeta con los archivos compilados y listos para producción.
-- **build/img/**: Carpeta con imágenes y iconos utilizados en el sitio.
-- **src/fonts/**: Carpeta con fuentes locales para el proyecto.
-- **favicon/**: Iconos de la aplicación para diferentes dispositivos y navegadores.
-- **index.html**: Página principal.
+- **build/css**: Carpeta que contiene los archivos CSS compilados y optimizados para producción.
+- **build/img**: Carpeta con imágenes optimizadas en formatos WebP y AVIF para mejor rendimiento web.
+- **src/scss**: Carpeta con los archivos fuente SCSS organizados en módulos y componentes.
+- **src/img**: Carpeta con las imágenes originales sin optimizar.
+- **index.html**: Página de inicio que presenta la cafetería y sus principales características.
+- **nosotros.html**: Página que cuenta nuestra historia, valores y equipo.
+- **proceso.html**: Página que detalla nuestro proceso de selección y preparación del café.
+- **menu.html**: Carta completa con nuestras bebidas, postres y platos especiales.
+- **galeria.html**: Colección de fotografías que muestran nuestro ambiente y productos.
+- **contacto.html**: Página con formulario de contacto y ubicación.
 
 ## Uso
 
-Este proyecto utiliza Gulp para automatizar el proceso de compilación de archivos SCSS a CSS, facilitando el desarrollo y la implementación. Asegúrate de seguir los siguientes pasos para configurar tu entorno de desarrollo.
+Para visualizar el proyecto localmente, sigue estos pasos:
 
-Antes de comenzar, necesitarás tener Node.js y npm (Node Package Manager) instalados en tu máquina.
+1. Clona este repositorio:
+
+```
+git clone https://github.com/JMatochePascual/PodcastFM.git
+```
+
+2. Navega al directorio del proyecto:
+
+```
+cd PodcastFM
+```
+
+3. Abre el archivo `index.html` en tu navegador web preferido
+
+4. Opcionalmente, puedes usar un servidor local como Live Server para una mejor experiencia
+
+### Requisitos Previos
+
+Para trabajar con este proyecto necesitarás:
+
+- Node.js (versión 14 o superior)
+- npm (Node Package Manager)
+- Conocimientos básicos de la terminal/línea de comandos
 
 ## Instalación
 
-Desde el directorio raíz del proyecto, ejecuta el siguiente comando para instalar las dependencias necesarias, incluido Gulp y el compilador de Sass. Esto leerá el archivo package.json y instalará las dependencias listadas en devDependencies.
+Para comenzar a trabajar con este proyecto, sigue estos pasos:
+
+1. Clona este repositorio:
+
+```
+git clone https://github.com/jmatochepascual/PodcastFM.git
+```
+
+2. Navega al directorio del proyecto:
+
+```
+cd PodcastFM
+```
+
+3. Instala las dependencias:
 
 ```
 npm i
 ```
 
-Para compilar los archivos SCSS a CSS utilizando Gulp, puedes utilizar uno de los siguientes comandos
+4. Compila los archivos SCSS a CSS:
 
 ```
 gulp dev
@@ -56,13 +87,23 @@ gulp dev
 
 ## Contribución
 
-Si estás interesado en contribuir al proyecto, por favor sigue estos pasos:
+Si deseas contribuir al proyecto, por favor sigue estos pasos en orden:
 
 1. Haz un fork del repositorio.
-2. Crea una nueva rama para tu característica (`git checkout -b mi-nueva-característica`).
-3. Compromete tus cambios (`git commit -am 'Añadir alguna característica'`).
-4. Empuja la rama (`git push origin mi-nueva-característica`).
-5. Abre un pull request.
+
+2. Crea una nueva rama para tu funcionalidad:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Realiza y confirma tus cambios:
+   ```bash
+   git commit -am 'Add new feature'
+   ```
+4. Sube los cambios a tu repositorio:
+   ```bash
+   git push origin feature-name
+   ```
+5. Abre un Pull Request desde tu repositorio hacia el proyecto principal
 
 ## Licencia
 
@@ -70,10 +111,10 @@ Este proyecto está bajo la licencia [MIT](https://opensource.org/licenses/MIT).
 
 ## Imagen de Rereferencia
 
-![](https://i.postimg.cc/j24HmR4R/Podcast-FM.png)
+![](https://i.postimg.cc/kG58GJb2/Podcast-FM.png)
 
-## Ver Proyecto en la WEB
+## ¡Visita Nuestro Proyecto!
 
-Puedes ver el proyecto en funcionamiento [aquí](https://jmatochepascual.github.io/PosdcastFM/).
+¿Quieres ver PodcastFM en acción? ¡Haz clic aquí! 👉 [Visitar PodcastFM](https://jmatochepascual.github.io/PodcastFM/)
 
-© 2024 PodcastFM. Todos los derechos reservados.
+Hecho con 💚 por PodcastFM | ©2025 - Transformando tu podcast en una experiencia única
